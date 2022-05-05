@@ -1,0 +1,876 @@
+diff --git a/.DS_Store b/.DS_Store
+new file mode 100644
+index 0000000..d8fb51d
+Binary files /dev/null and b/.DS_Store differ
+diff --git a/finance-manager/finance-manager.xcodeproj/project.pbxproj b/finance-manager/finance-manager.xcodeproj/project.pbxproj
+new file mode 100644
+index 0000000..b3fcf40
+--- /dev/null
++++ b/finance-manager/finance-manager.xcodeproj/project.pbxproj
+@@ -0,0 +1,375 @@
++// !$*UTF8*$!
++{
++	archiveVersion = 1;
++	classes = {
++	};
++	objectVersion = 55;
++	objects = {
++
++/* Begin PBXBuildFile section */
++		57541D22282345AD00F50DBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57541D21282345AD00F50DBF /* AppDelegate.swift */; };
++		57541D24282345AD00F50DBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57541D23282345AD00F50DBF /* SceneDelegate.swift */; };
++		57541D26282345AD00F50DBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57541D25282345AD00F50DBF /* ViewController.swift */; };
++		57541D29282345AD00F50DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57541D27282345AD00F50DBF /* Main.storyboard */; };
++		57541D2B282345AF00F50DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57541D2A282345AF00F50DBF /* Assets.xcassets */; };
++		57541D2E282345AF00F50DBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57541D2C282345AF00F50DBF /* LaunchScreen.storyboard */; };
++		57541D372823523700F50DBF /* Aaaaa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57541D352823523600F50DBF /* Aaaaa.storyboard */; };
++/* End PBXBuildFile section */
++
++/* Begin PBXFileReference section */
++		57541D1E282345AD00F50DBF /* finance-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "finance-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
++		57541D21282345AD00F50DBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
++		57541D23282345AD00F50DBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
++		57541D25282345AD00F50DBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
++		57541D28282345AD00F50DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
++		57541D2A282345AF00F50DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
++		57541D2D282345AF00F50DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
++		57541D2F282345AF00F50DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
++		57541D362823523600F50DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/QuizApp 2/QuizApp/View/Base.lproj/Aaaaa.storyboard"; sourceTree = "<group>"; };
++/* End PBXFileReference section */
++
++/* Begin PBXFrameworksBuildPhase section */
++		57541D1B282345AD00F50DBF /* Frameworks */ = {
++			isa = PBXFrameworksBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXFrameworksBuildPhase section */
++
++/* Begin PBXGroup section */
++		57541D15282345AD00F50DBF = {
++			isa = PBXGroup;
++			children = (
++				57541D20282345AD00F50DBF /* finance-manager */,
++				57541D1F282345AD00F50DBF /* Products */,
++			);
++			sourceTree = "<group>";
++		};
++		57541D1F282345AD00F50DBF /* Products */ = {
++			isa = PBXGroup;
++			children = (
++				57541D1E282345AD00F50DBF /* finance-manager.app */,
++			);
++			name = Products;
++			sourceTree = "<group>";
++		};
++		57541D20282345AD00F50DBF /* finance-manager */ = {
++			isa = PBXGroup;
++			children = (
++				57541D21282345AD00F50DBF /* AppDelegate.swift */,
++				57541D23282345AD00F50DBF /* SceneDelegate.swift */,
++				57541D25282345AD00F50DBF /* ViewController.swift */,
++				57541D27282345AD00F50DBF /* Main.storyboard */,
++				57541D2A282345AF00F50DBF /* Assets.xcassets */,
++				57541D2C282345AF00F50DBF /* LaunchScreen.storyboard */,
++				57541D2F282345AF00F50DBF /* Info.plist */,
++				57541D352823523600F50DBF /* Aaaaa.storyboard */,
++			);
++			path = "finance-manager";
++			sourceTree = "<group>";
++		};
++/* End PBXGroup section */
++
++/* Begin PBXNativeTarget section */
++		57541D1D282345AD00F50DBF /* finance-manager */ = {
++			isa = PBXNativeTarget;
++			buildConfigurationList = 57541D32282345AF00F50DBF /* Build configuration list for PBXNativeTarget "finance-manager" */;
++			buildPhases = (
++				57541D1A282345AD00F50DBF /* Sources */,
++				57541D1B282345AD00F50DBF /* Frameworks */,
++				57541D1C282345AD00F50DBF /* Resources */,
++			);
++			buildRules = (
++			);
++			dependencies = (
++			);
++			name = "finance-manager";
++			productName = "finance-manager";
++			productReference = 57541D1E282345AD00F50DBF /* finance-manager.app */;
++			productType = "com.apple.product-type.application";
++		};
++/* End PBXNativeTarget section */
++
++/* Begin PBXProject section */
++		57541D16282345AD00F50DBF /* Project object */ = {
++			isa = PBXProject;
++			attributes = {
++				BuildIndependentTargetsInParallel = 1;
++				LastSwiftUpdateCheck = 1330;
++				LastUpgradeCheck = 1330;
++				TargetAttributes = {
++					57541D1D282345AD00F50DBF = {
++						CreatedOnToolsVersion = 13.3;
++					};
++				};
++			};
++			buildConfigurationList = 57541D19282345AD00F50DBF /* Build configuration list for PBXProject "finance-manager" */;
++			compatibilityVersion = "Xcode 13.0";
++			developmentRegion = en;
++			hasScannedForEncodings = 0;
++			knownRegions = (
++				en,
++				Base,
++			);
++			mainGroup = 57541D15282345AD00F50DBF;
++			productRefGroup = 57541D1F282345AD00F50DBF /* Products */;
++			projectDirPath = "";
++			projectRoot = "";
++			targets = (
++				57541D1D282345AD00F50DBF /* finance-manager */,
++			);
++		};
++/* End PBXProject section */
++
++/* Begin PBXResourcesBuildPhase section */
++		57541D1C282345AD00F50DBF /* Resources */ = {
++			isa = PBXResourcesBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++				57541D372823523700F50DBF /* Aaaaa.storyboard in Resources */,
++				57541D2E282345AF00F50DBF /* LaunchScreen.storyboard in Resources */,
++				57541D2B282345AF00F50DBF /* Assets.xcassets in Resources */,
++				57541D29282345AD00F50DBF /* Main.storyboard in Resources */,
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXResourcesBuildPhase section */
++
++/* Begin PBXSourcesBuildPhase section */
++		57541D1A282345AD00F50DBF /* Sources */ = {
++			isa = PBXSourcesBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++				57541D26282345AD00F50DBF /* ViewController.swift in Sources */,
++				57541D22282345AD00F50DBF /* AppDelegate.swift in Sources */,
++				57541D24282345AD00F50DBF /* SceneDelegate.swift in Sources */,
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXSourcesBuildPhase section */
++
++/* Begin PBXVariantGroup section */
++		57541D27282345AD00F50DBF /* Main.storyboard */ = {
++			isa = PBXVariantGroup;
++			children = (
++				57541D28282345AD00F50DBF /* Base */,
++			);
++			name = Main.storyboard;
++			sourceTree = "<group>";
++		};
++		57541D2C282345AF00F50DBF /* LaunchScreen.storyboard */ = {
++			isa = PBXVariantGroup;
++			children = (
++				57541D2D282345AF00F50DBF /* Base */,
++			);
++			name = LaunchScreen.storyboard;
++			sourceTree = "<group>";
++		};
++		57541D352823523600F50DBF /* Aaaaa.storyboard */ = {
++			isa = PBXVariantGroup;
++			children = (
++				57541D362823523600F50DBF /* Base */,
++			);
++			name = Aaaaa.storyboard;
++			sourceTree = "<group>";
++		};
++/* End PBXVariantGroup section */
++
++/* Begin XCBuildConfiguration section */
++		57541D30282345AF00F50DBF /* Debug */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ALWAYS_SEARCH_USER_PATHS = NO;
++				CLANG_ANALYZER_NONNULL = YES;
++				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
++				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
++				CLANG_ENABLE_MODULES = YES;
++				CLANG_ENABLE_OBJC_ARC = YES;
++				CLANG_ENABLE_OBJC_WEAK = YES;
++				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
++				CLANG_WARN_BOOL_CONVERSION = YES;
++				CLANG_WARN_COMMA = YES;
++				CLANG_WARN_CONSTANT_CONVERSION = YES;
++				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
++				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
++				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
++				CLANG_WARN_EMPTY_BODY = YES;
++				CLANG_WARN_ENUM_CONVERSION = YES;
++				CLANG_WARN_INFINITE_RECURSION = YES;
++				CLANG_WARN_INT_CONVERSION = YES;
++				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
++				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
++				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
++				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
++				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
++				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
++				CLANG_WARN_STRICT_PROTOTYPES = YES;
++				CLANG_WARN_SUSPICIOUS_MOVE = YES;
++				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
++				CLANG_WARN_UNREACHABLE_CODE = YES;
++				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
++				COPY_PHASE_STRIP = NO;
++				DEBUG_INFORMATION_FORMAT = dwarf;
++				ENABLE_STRICT_OBJC_MSGSEND = YES;
++				ENABLE_TESTABILITY = YES;
++				GCC_C_LANGUAGE_STANDARD = gnu11;
++				GCC_DYNAMIC_NO_PIC = NO;
++				GCC_NO_COMMON_BLOCKS = YES;
++				GCC_OPTIMIZATION_LEVEL = 0;
++				GCC_PREPROCESSOR_DEFINITIONS = (
++					"DEBUG=1",
++					"$(inherited)",
++				);
++				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
++				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
++				GCC_WARN_UNDECLARED_SELECTOR = YES;
++				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
++				GCC_WARN_UNUSED_FUNCTION = YES;
++				GCC_WARN_UNUSED_VARIABLE = YES;
++				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
++				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
++				MTL_FAST_MATH = YES;
++				ONLY_ACTIVE_ARCH = YES;
++				SDKROOT = iphoneos;
++				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
++				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
++			};
++			name = Debug;
++		};
++		57541D31282345AF00F50DBF /* Release */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ALWAYS_SEARCH_USER_PATHS = NO;
++				CLANG_ANALYZER_NONNULL = YES;
++				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
++				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
++				CLANG_ENABLE_MODULES = YES;
++				CLANG_ENABLE_OBJC_ARC = YES;
++				CLANG_ENABLE_OBJC_WEAK = YES;
++				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
++				CLANG_WARN_BOOL_CONVERSION = YES;
++				CLANG_WARN_COMMA = YES;
++				CLANG_WARN_CONSTANT_CONVERSION = YES;
++				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
++				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
++				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
++				CLANG_WARN_EMPTY_BODY = YES;
++				CLANG_WARN_ENUM_CONVERSION = YES;
++				CLANG_WARN_INFINITE_RECURSION = YES;
++				CLANG_WARN_INT_CONVERSION = YES;
++				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
++				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
++				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
++				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
++				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
++				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
++				CLANG_WARN_STRICT_PROTOTYPES = YES;
++				CLANG_WARN_SUSPICIOUS_MOVE = YES;
++				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
++				CLANG_WARN_UNREACHABLE_CODE = YES;
++				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
++				COPY_PHASE_STRIP = NO;
++				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
++				ENABLE_NS_ASSERTIONS = NO;
++				ENABLE_STRICT_OBJC_MSGSEND = YES;
++				GCC_C_LANGUAGE_STANDARD = gnu11;
++				GCC_NO_COMMON_BLOCKS = YES;
++				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
++				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
++				GCC_WARN_UNDECLARED_SELECTOR = YES;
++				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
++				GCC_WARN_UNUSED_FUNCTION = YES;
++				GCC_WARN_UNUSED_VARIABLE = YES;
++				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
++				MTL_ENABLE_DEBUG_INFO = NO;
++				MTL_FAST_MATH = YES;
++				SDKROOT = iphoneos;
++				SWIFT_COMPILATION_MODE = wholemodule;
++				SWIFT_OPTIMIZATION_LEVEL = "-O";
++				VALIDATE_PRODUCT = YES;
++			};
++			name = Release;
++		};
++		57541D33282345AF00F50DBF /* Debug */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
++				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
++				CODE_SIGN_STYLE = Automatic;
++				CURRENT_PROJECT_VERSION = 1;
++				GENERATE_INFOPLIST_FILE = YES;
++				INFOPLIST_FILE = "finance-manager/Info.plist";
++				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
++				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
++				INFOPLIST_KEY_UIMainStoryboardFile = Main;
++				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
++				LD_RUNPATH_SEARCH_PATHS = (
++					"$(inherited)",
++					"@executable_path/Frameworks",
++				);
++				MARKETING_VERSION = 1.0;
++				PRODUCT_BUNDLE_IDENTIFIER = "br.pucpr.finance-manager";
++				PRODUCT_NAME = "$(TARGET_NAME)";
++				SWIFT_EMIT_LOC_STRINGS = YES;
++				SWIFT_VERSION = 5.0;
++				TARGETED_DEVICE_FAMILY = "1,2";
++			};
++			name = Debug;
++		};
++		57541D34282345AF00F50DBF /* Release */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
++				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
++				CODE_SIGN_STYLE = Automatic;
++				CURRENT_PROJECT_VERSION = 1;
++				GENERATE_INFOPLIST_FILE = YES;
++				INFOPLIST_FILE = "finance-manager/Info.plist";
++				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
++				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
++				INFOPLIST_KEY_UIMainStoryboardFile = Main;
++				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
++				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
++				LD_RUNPATH_SEARCH_PATHS = (
++					"$(inherited)",
++					"@executable_path/Frameworks",
++				);
++				MARKETING_VERSION = 1.0;
++				PRODUCT_BUNDLE_IDENTIFIER = "br.pucpr.finance-manager";
++				PRODUCT_NAME = "$(TARGET_NAME)";
++				SWIFT_EMIT_LOC_STRINGS = YES;
++				SWIFT_VERSION = 5.0;
++				TARGETED_DEVICE_FAMILY = "1,2";
++			};
++			name = Release;
++		};
++/* End XCBuildConfiguration section */
++
++/* Begin XCConfigurationList section */
++		57541D19282345AD00F50DBF /* Build configuration list for PBXProject "finance-manager" */ = {
++			isa = XCConfigurationList;
++			buildConfigurations = (
++				57541D30282345AF00F50DBF /* Debug */,
++				57541D31282345AF00F50DBF /* Release */,
++			);
++			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
++		};
++		57541D32282345AF00F50DBF /* Build configuration list for PBXNativeTarget "finance-manager" */ = {
++			isa = XCConfigurationList;
++			buildConfigurations = (
++				57541D33282345AF00F50DBF /* Debug */,
++				57541D34282345AF00F50DBF /* Release */,
++			);
++			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
++		};
++/* End XCConfigurationList section */
++	};
++	rootObject = 57541D16282345AD00F50DBF /* Project object */;
++}
+diff --git a/finance-manager/finance-manager.xcodeproj/project.xcworkspace/contents.xcworkspacedata b/finance-manager/finance-manager.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+new file mode 100644
+index 0000000..919434a
+--- /dev/null
++++ b/finance-manager/finance-manager.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<Workspace
++   version = "1.0">
++   <FileRef
++      location = "self:">
++   </FileRef>
++</Workspace>
+diff --git a/finance-manager/finance-manager.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist b/finance-manager/finance-manager.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+new file mode 100644
+index 0000000..18d9810
+--- /dev/null
++++ b/finance-manager/finance-manager.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++<plist version="1.0">
++<dict>
++	<key>IDEDidComputeMac32BitWarning</key>
++	<true/>
++</dict>
++</plist>
+diff --git a/finance-manager/finance-manager/AppDelegate.swift b/finance-manager/finance-manager/AppDelegate.swift
+new file mode 100644
+index 0000000..a8b7d41
+--- /dev/null
++++ b/finance-manager/finance-manager/AppDelegate.swift
+@@ -0,0 +1,36 @@
++//
++//  AppDelegate.swift
++//  finance-manager
++//
++//  Created by ALUNO on 04/05/22.
++//
++
++import UIKit
++
++@main
++class AppDelegate: UIResponder, UIApplicationDelegate {
++
++
++
++    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
++        // Override point for customization after application launch.
++        return true
++    }
++
++    // MARK: UISceneSession Lifecycle
++
++    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
++        // Called when a new scene session is being created.
++        // Use this method to select a configuration to create the new scene with.
++        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
++    }
++
++    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
++        // Called when the user discards a scene session.
++        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
++        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
++    }
++
++
++}
++
+diff --git a/finance-manager/finance-manager/Assets.xcassets/AccentColor.colorset/Contents.json b/finance-manager/finance-manager/Assets.xcassets/AccentColor.colorset/Contents.json
+new file mode 100644
+index 0000000..eb87897
+--- /dev/null
++++ b/finance-manager/finance-manager/Assets.xcassets/AccentColor.colorset/Contents.json
+@@ -0,0 +1,11 @@
++{
++  "colors" : [
++    {
++      "idiom" : "universal"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/finance-manager/finance-manager/Assets.xcassets/AppIcon.appiconset/Contents.json b/finance-manager/finance-manager/Assets.xcassets/AppIcon.appiconset/Contents.json
+new file mode 100644
+index 0000000..9221b9b
+--- /dev/null
++++ b/finance-manager/finance-manager/Assets.xcassets/AppIcon.appiconset/Contents.json
+@@ -0,0 +1,98 @@
++{
++  "images" : [
++    {
++      "idiom" : "iphone",
++      "scale" : "2x",
++      "size" : "20x20"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "3x",
++      "size" : "20x20"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "2x",
++      "size" : "29x29"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "3x",
++      "size" : "29x29"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "2x",
++      "size" : "40x40"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "3x",
++      "size" : "40x40"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "2x",
++      "size" : "60x60"
++    },
++    {
++      "idiom" : "iphone",
++      "scale" : "3x",
++      "size" : "60x60"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "1x",
++      "size" : "20x20"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "2x",
++      "size" : "20x20"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "1x",
++      "size" : "29x29"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "2x",
++      "size" : "29x29"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "1x",
++      "size" : "40x40"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "2x",
++      "size" : "40x40"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "1x",
++      "size" : "76x76"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "2x",
++      "size" : "76x76"
++    },
++    {
++      "idiom" : "ipad",
++      "scale" : "2x",
++      "size" : "83.5x83.5"
++    },
++    {
++      "idiom" : "ios-marketing",
++      "scale" : "1x",
++      "size" : "1024x1024"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/finance-manager/finance-manager/Assets.xcassets/Contents.json b/finance-manager/finance-manager/Assets.xcassets/Contents.json
+new file mode 100644
+index 0000000..73c0059
+--- /dev/null
++++ b/finance-manager/finance-manager/Assets.xcassets/Contents.json
+@@ -0,0 +1,6 @@
++{
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/finance-manager/finance-manager/Base.lproj/LaunchScreen.storyboard b/finance-manager/finance-manager/Base.lproj/LaunchScreen.storyboard
+new file mode 100644
+index 0000000..865e932
+--- /dev/null
++++ b/finance-manager/finance-manager/Base.lproj/LaunchScreen.storyboard
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="UTF-8" standalone="no"?>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
++    <dependencies>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
++        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
++        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
++    </dependencies>
++    <scenes>
++        <!--View Controller-->
++        <scene sceneID="EHf-IW-A2E">
++            <objects>
++                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
++                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
++                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
++                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
++                    </view>
++                </viewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="53" y="375"/>
++        </scene>
++    </scenes>
++</document>
+diff --git a/finance-manager/finance-manager/Base.lproj/Main.storyboard b/finance-manager/finance-manager/Base.lproj/Main.storyboard
+new file mode 100644
+index 0000000..fdc9ad5
+--- /dev/null
++++ b/finance-manager/finance-manager/Base.lproj/Main.storyboard
+@@ -0,0 +1,138 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
++    <device id="retina6_1" orientation="portrait" appearance="light"/>
++    <dependencies>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
++        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
++        <capability name="System colors in document resources" minToolsVersion="11.0"/>
++        <capability name="collection view cell content view" minToolsVersion="11.0"/>
++        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
++    </dependencies>
++    <scenes>
++        <!--View Controller-->
++        <scene sceneID="tne-QT-ifu">
++            <objects>
++                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="finance_manager" customModuleProvider="target" sceneMemberID="viewController">
++                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
++                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
++                        <subviews>
++                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vwv-aC-iNc">
++                                <rect key="frame" x="56" y="374" width="306" height="436"/>
++                                <autoresizingMask key="autoresizingMask"/>
++                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
++                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="6GA-c5-s4O">
++                                    <size key="itemSize" width="286" height="50"/>
++                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
++                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
++                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
++                                </collectionViewFlowLayout>
++                                <cells>
++                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lB9-bJ-bV7">
++                                        <rect key="frame" x="10" y="10" width="286" height="50"/>
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HWa-AX-YlM">
++                                            <rect key="frame" x="0.0" y="0.0" width="286" height="50"/>
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="uCD-NH-XZA">
++                                                    <rect key="frame" x="0.0" y="15" width="285.5" height="20.5"/>
++                                                    <subviews>
++                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="valor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gB-W8-nAz">
++                                                            <rect key="frame" x="0.0" y="0.0" width="38.5" height="20.5"/>
++                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                                            <nil key="textColor"/>
++                                                            <nil key="highlightedColor"/>
++                                                        </label>
++                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNQ-5I-73s">
++                                                            <rect key="frame" x="123.5" y="0.0" width="38.5" height="20.5"/>
++                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                                            <nil key="textColor"/>
++                                                            <nil key="highlightedColor"/>
++                                                        </label>
++                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-c9-V4Z">
++                                                            <rect key="frame" x="247" y="0.0" width="38.5" height="20.5"/>
++                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                                            <nil key="textColor"/>
++                                                            <nil key="highlightedColor"/>
++                                                        </label>
++                                                    </subviews>
++                                                </stackView>
++                                            </subviews>
++                                        </collectionViewCellContentView>
++                                    </collectionViewCell>
++                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cno-rj-FP6">
++                                        <rect key="frame" x="10" y="65" width="286" height="50"/>
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hFg-cG-yhN">
++                                            <rect key="frame" x="0.0" y="0.0" width="286" height="50"/>
++                                            <autoresizingMask key="autoresizingMask"/>
++                                        </collectionViewCellContentView>
++                                    </collectionViewCell>
++                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wb9-7W-GvB">
++                                        <rect key="frame" x="10" y="120" width="286" height="50"/>
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KFU-bK-NrM">
++                                            <rect key="frame" x="0.0" y="0.0" width="286" height="50"/>
++                                            <autoresizingMask key="autoresizingMask"/>
++                                        </collectionViewCellContentView>
++                                    </collectionViewCell>
++                                </cells>
++                            </collectionView>
++                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-rH-Fdu">
++                                <rect key="frame" x="56" y="828" width="306" height="40"/>
++                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
++                                <state key="normal" title="Button"/>
++                                <buttonConfiguration key="configuration" style="filled" title="ver todos" cornerStyle="dynamic" buttonSize="medium" titleAlignment="center">
++                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
++                                </buttonConfiguration>
++                            </button>
++                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qos-6a-Lvo">
++                                <rect key="frame" x="315" y="321" width="47" height="40"/>
++                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
++                                <state key="normal" title="Button"/>
++                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="dynamic" buttonSize="medium" titleAlignment="center">
++                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
++                                </buttonConfiguration>
++                            </button>
++                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meu gastos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUT-bu-Xup">
++                                <rect key="frame" x="56" y="330" width="89" height="21"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                <color key="textColor" systemColor="systemBackgroundColor"/>
++                                <nil key="highlightedColor"/>
++                            </label>
++                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de gastos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF8-7O-M8e">
++                                <rect key="frame" x="56" y="69" width="116" height="21"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                <color key="textColor" systemColor="systemBackgroundColor"/>
++                                <nil key="highlightedColor"/>
++                            </label>
++                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udj-2X-TnL">
++                                <rect key="frame" x="56" y="98" width="116" height="21"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                <nil key="textColor"/>
++                                <nil key="highlightedColor"/>
++                            </label>
++                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-c8-1uY">
++                                <rect key="frame" x="56" y="127" width="49" height="31"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                            </switch>
++                        </subviews>
++                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
++                        <color key="backgroundColor" red="0.26692744673703872" green="0.52826829054920943" blue="0.27223442017932797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
++                    </view>
++                </viewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
++        </scene>
++    </scenes>
++    <resources>
++        <systemColor name="systemBackgroundColor">
++            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
++        </systemColor>
++    </resources>
++</document>
+diff --git a/finance-manager/finance-manager/Info.plist b/finance-manager/finance-manager/Info.plist
+new file mode 100644
+index 0000000..dd3c9af
+--- /dev/null
++++ b/finance-manager/finance-manager/Info.plist
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++<plist version="1.0">
++<dict>
++	<key>UIApplicationSceneManifest</key>
++	<dict>
++		<key>UIApplicationSupportsMultipleScenes</key>
++		<false/>
++		<key>UISceneConfigurations</key>
++		<dict>
++			<key>UIWindowSceneSessionRoleApplication</key>
++			<array>
++				<dict>
++					<key>UISceneConfigurationName</key>
++					<string>Default Configuration</string>
++					<key>UISceneDelegateClassName</key>
++					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
++					<key>UISceneStoryboardFile</key>
++					<string>Main</string>
++				</dict>
++			</array>
++		</dict>
++	</dict>
++</dict>
++</plist>
+diff --git a/finance-manager/finance-manager/SceneDelegate.swift b/finance-manager/finance-manager/SceneDelegate.swift
+new file mode 100644
+index 0000000..15163f9
+--- /dev/null
++++ b/finance-manager/finance-manager/SceneDelegate.swift
+@@ -0,0 +1,52 @@
++//
++//  SceneDelegate.swift
++//  finance-manager
++//
++//  Created by ALUNO on 04/05/22.
++//
++
++import UIKit
++
++class SceneDelegate: UIResponder, UIWindowSceneDelegate {
++
++    var window: UIWindow?
++
++
++    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
++        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
++        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
++        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
++        guard let _ = (scene as? UIWindowScene) else { return }
++    }
++
++    func sceneDidDisconnect(_ scene: UIScene) {
++        // Called as the scene is being released by the system.
++        // This occurs shortly after the scene enters the background, or when its session is discarded.
++        // Release any resources associated with this scene that can be re-created the next time the scene connects.
++        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
++    }
++
++    func sceneDidBecomeActive(_ scene: UIScene) {
++        // Called when the scene has moved from an inactive state to an active state.
++        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
++    }
++
++    func sceneWillResignActive(_ scene: UIScene) {
++        // Called when the scene will move from an active state to an inactive state.
++        // This may occur due to temporary interruptions (ex. an incoming phone call).
++    }
++
++    func sceneWillEnterForeground(_ scene: UIScene) {
++        // Called as the scene transitions from the background to the foreground.
++        // Use this method to undo the changes made on entering the background.
++    }
++
++    func sceneDidEnterBackground(_ scene: UIScene) {
++        // Called as the scene transitions from the foreground to the background.
++        // Use this method to save data, release shared resources, and store enough scene-specific state information
++        // to restore the scene back to its current state.
++    }
++
++
++}
++
+diff --git a/finance-manager/finance-manager/ViewController.swift b/finance-manager/finance-manager/ViewController.swift
+new file mode 100644
+index 0000000..ed4cf4a
+--- /dev/null
++++ b/finance-manager/finance-manager/ViewController.swift
+@@ -0,0 +1,19 @@
++//
++//  ViewController.swift
++//  finance-manager
++//
++//  Created by ALUNO on 04/05/22.
++//
++
++import UIKit
++
++class ViewController: UIViewController {
++
++    override func viewDidLoad() {
++        super.viewDidLoad()
++        // Do any additional setup after loading the view.
++    }
++
++
++}
++
